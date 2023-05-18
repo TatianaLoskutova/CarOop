@@ -1,5 +1,17 @@
-.car {}
-    .hide {
-        display: none;
+.car{
+    border: 1px grey solid;
+    margin: 10px;
+    padding: 10px;
+}
+.info-panel
+    label{
+        font-weight: bold;
     }
-{}
+.hide {
+        display:none;
+    }
+
+
+
+
+

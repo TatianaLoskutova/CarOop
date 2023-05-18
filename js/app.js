@@ -1,24 +1,29 @@
-function carStartListener() {
-    let randomNumber = Math.random();
 
-    if (randomNumber > 0.5) {
-        console.log('Car has started');
+(function (){
 
-        startButton.classList.add('hide');
+    let car1 = new Car('car1');
 
-        function engineCrashed() {
-            console.log('engine crashed')
-            startButton.classList.remove('hide');
-        }
-        setTimeout(engineCrashed, 2000);
+    car1.start();
 
-        console.log('we are waiting crash');
 
-    } else {
-        console.log('Something wrong');
-    }
-}
+    // let garage = document.getElementById('garage');
+    // for (let i = 0; i < 2; i++) {
+    //     let div = document.createElement('div');
+    //     let id = 'car' + i;
+    //     div.id = id;
+    //     garage.appendChild(div);
+    //     startCarProcess(id);
+    // }
+    //
+    // function startAllCarsListener() {
+    //     alert('should start all cars')
+    // }
+    //
+    // let startAllCars = document.getElementById('start-all-cars');
+    // startAllCars.addEventListener('click', startAllCarsListener);
+})();
 
-let startButton = document.querySelector('#start-car');
-startButton.addEventListener('click', carStartListener);
+
+
+
 
